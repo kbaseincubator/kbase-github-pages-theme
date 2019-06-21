@@ -1,0 +1,86 @@
+{% comment %}
+Set up variables.
+{% endcomment %}
+{% assign page_path = page.url | remove_first: "/" | split: "/" %}
+{% assign page_path_length = page_path | size %}
+{% assign page_has_children = false %}
+{% if page_path.last == 'index.md' %}
+  {% assign page_is_index = true %}
+{% else %}
+  {% assign page_is_index = false %}
+{% endif %}
+
+<ul class="navigation-list-child-list">
+
+{% for item in include.menu %}
+
+    {% if item.slug == nil %}
+         {% assign slug = item.label | downcase  | replace: " ", "-" %}
+    {% else %}
+         {% assign slug = item.slug %}
+    {% endif %}
+
+    {% assign slug_list = slug | split: "," %}
+
+    {% comment %}
+    The nav item slug defaults to the label in lower case.
+    That default is not advised for menu items which may be renamed, but
+    makes it easier to jumpstart navigation
+    {% endcomment %}
+    {% assign index = include.level | minus: 1 %}
+    {% if slug == page_path[index] %}
+        {% assign is_current = true %}
+    {% else %}
+        {% assign is_current = false %}
+    {% endif %}
+
+    {% comment %}
+    We identify the current navigation based on the path of the this page
+    and the navigation trail left by descending through the nav tree
+    {% endcomment %}
+    {% assign current_path_element = page_path[index] | split: "." %}
+    {% assign current_path_element = current_path_element[0] %}
+
+    {% comment %}
+    Determine if this nav item is also the current page
+    {% endcomment %}
+    {% assign is_current = false %}
+    {% if slug == current_path_element %}
+        {% assign is_open = true %}
+        {% if page_path.size == include.level %} 
+            {% assign is_current = true %}
+        {% endif %}
+    {% else %}
+        {% assign is_open = false %}
+    {% endif %}
+
+    {% comment %}
+    Determine if this nav item has children
+    {% endcomment %}
+    {% if item.menu %}  
+        {% assign has_children = true %}
+    {% else %}
+        {% assign has_children = false %}
+    {% endif %}
+
+    {% if include.slug_path.size == 0 %}
+        {% assign slug_prefix = "" %}
+    {% elsif include.slug_path.size == 1 %}
+        {% assign slug_prefix = include.slug_path[0] | append: "/" %}
+    {% else %}
+        {% assign slug_prefix = include.slug_path | join: "/" | append: "/" %}
+    {% endif %}
+   
+    <li class="navigation-list-item{% if is_current %} active{% endif %}{% if is_open %} open{% endif %}{% if has_children %} children{% endif %}">
+        <a href="{{ site.baseurl }}/{{ slug_prefix }}{{ slug }}" class="navigation-list-link{% if is_current %} active{% endif %}">
+            {{ item.label}}
+        </a>
+        {% if item.menu %}
+            {% assign next_level = include.level | plus: 1 %}
+            {% assign next_slug_path = include.slug_path | concat: slug_list %}
+               {% include nav-child.html menu=item.menu level=next_level slug_path=next_slug_path %}
+        {% endif %}
+    </li>
+{% endfor %}
+
+</ul>
