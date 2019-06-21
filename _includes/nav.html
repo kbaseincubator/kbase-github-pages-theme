@@ -1,0 +1,18 @@
+{% comment %}
+Set up variables.
+{% endcomment %}
+{% assign page_path = page.url | remove_first: "/" | split: "/" %}
+{% assign page_path_length = page_path | size %}
+{% assign page_has_children = false %}
+{% assign level = 1 %}
+{% if page_path.last == 'index.md' %}
+  {% assign page_is_index = true %}
+{% else %}
+  {% assign page_is_index = false %}
+{% endif %}
+
+{% assign slug_path = "" | split: "," %}
+
+<nav role="navigation" aria-label="Main navigation">
+  {% include nav-child.html menu=site.navigation.menu level=1 slug_path=slug_path %}
+</nav>
