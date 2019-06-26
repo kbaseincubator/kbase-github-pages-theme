@@ -18,7 +18,7 @@ permalink: /
 
 ### Dependencies
 
-*KBase Github Pages Theme* is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. Just the Docs requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler.
+*KBase Github Pages Theme* is built for [Jekyll](https://jekyllrb.com), a static site generator. View the [quick start guide](https://jekyllrb.com/docs/) for more information. KBase Github Pages Theme requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler.
 
 ### Quick start: Use as a GitHub Pages remote theme
 
@@ -43,10 +43,10 @@ $ gem install just-the-docs
 gem "just-the-docs"
 ```
 
-2. Add Just the Docs to your Jekyll site’s `_config.yml`
+2. Add KBase Github Pages Theme to your Jekyll site’s `_config.yml`
 
 ```yaml
-theme: "just-the-docs"
+remote_theme: kbaseIncubator/kbase-github-pages-theme
 ```
 
 3. _Optional:_ Initialize search data (creates `search-data.json`)
@@ -70,7 +70,7 @@ $ bundle exec jekyll serve
 
 If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll locally](https://help.github.com/en/articles/setting-up-your-github-pages-site-locally-with-jekyll) so that you can more easily work in your development environment.
 
-### Configure Just the Docs
+### Configure KBase Github Pages Theme
 
 - [See configuration options]({{ site.baseurl }}{% link docs/configuration.md %})
 
@@ -78,19 +78,19 @@ If you're hosting your site on GitHub Pages, [set up GitHub Pages and Jekyll loc
 
 ## About the project
 
-Just the Docs is &copy; 2017-2019 by [Patrick Marsceill](http://patrickmarsceill.com).
+KBase Github Pages Theme ...
 
 ### License
 
-Just the Docs is distributed by an [MIT license](https://github.com/pmarsceill/just-the-docs/tree/master/LICENSE.txt).
+KBase Github Pages Theme is distributed by a [KBase License](https://github.com/kbaseIncubator/kbase-githug-pages-theme/tree/master/LICENSE.md).
 
 ### Contributing
 
 When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
+email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/kbaseIncubator/kbase-githug-pages-theme/just-the-docs#contributing).
 
 ### Code of Conduct
 
-Just the Docs is committed to fostering a welcoming community.
+KBase Github Pages Theme is committed to fostering a welcoming community.
 
-[View our Code of Conduct](https://github.com/pmarsceill/just-the-docs/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.
+[View our Code of Conduct](https://github.com/kbaseIncubator/kbase-githug-pages-theme/tree/master/CODE_OF_CONDUCT.md) on our GitHub repository.

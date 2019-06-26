@@ -20,7 +20,7 @@ nav_order: 1
 
 ## Font stack
 
-By default, Just the Docs uses a native system font stack for sans-serif fonts:
+By default, KBase Github Pages Theme uses a native system font stack for sans-serif fonts:
 
 ```scss
 -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif
@@ -30,7 +30,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 abcdefghijklmnopqrstuvwxyz
 {: .fs-5 .ls-10 .code-example }
 
-For monospace type, like code snippets or the `<pre>` element, Just the Docs uses a native system font stack for monospace fonts:
+For monospace type, like code snippets or the `<pre>` element, KBase Github Pages Theme uses a native system font stack for monospace fonts:
 
 ```scss
 "SFMono-Regular", Menlo, Consolas, Monospace
@@ -44,7 +44,7 @@ abcdefghijklmnopqrstuvwxyz
 
 ## Responsive type scale
 
-Just the Docs uses a responsive type scale that shifts depending on the viewport size.
+KBase Github Pages Theme uses a responsive type scale that shifts depending on the viewport size.
 
 | Selector              | Small screen size `font-size` | Large screen size `font-size` |
 | :-------------------- | :---------------------------- | :---------------------------- |
