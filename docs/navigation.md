@@ -17,7 +17,7 @@ nav_order: 5
 
 ## Main navigation
 
-The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
+The main navigation for your KBase Github Pages Theme site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
 
 By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see [Pages with Children](#pages-with-children)).
 
@@ -220,8 +220,8 @@ To add a auxiliary navigation item to your site (in the upper right on all pages
 ```yaml
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/pmarsceill/just-the-docs"
+  "KBase Github Pages Theme":
+    - "//github.com/kbaseIncubator/kbase-github-pages-theme"
 ```
 
 ---

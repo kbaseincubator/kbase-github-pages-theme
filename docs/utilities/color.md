@@ -12,7 +12,7 @@
 
 ---
 
-All the colors used in Just the Docs have been systematized into a series of variables that have been extended to both font color and background color utility classes.
+All the colors used in KBase Github Pages Theme have been systematized into a series of variables that have been extended to both font color and background color utility classes.
 
 ## Light Greys
 
