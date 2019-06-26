@@ -26,7 +26,7 @@ bundle
 Or install it yourself as:
 
 ```bash
-gem install just-the-docs
+gem install kbase-github-pages-theme
 ```
 
 ## Development
