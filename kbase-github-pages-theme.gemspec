@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "kbase-github-pages-theme"
-  spec.version       = "0.2.5"
+  spec.version       = "0.2.6"
   spec.authors       = ["Patrick Marsceill", "Erik Pearson"]
   spec.email         = ["eapearson@lbl.gov"]
 
@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE|README)}i) }
-  spec.executables   << 'just-the-docs'
+  spec.executables   << 'kbase-github-pages-theme'
 
   spec.add_runtime_dependency "jekyll", "~> 3.8.5"
   spec.add_runtime_dependency "jekyll-seo-tag", "~> 2.0"
