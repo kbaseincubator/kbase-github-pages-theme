@@ -15,7 +15,7 @@ Set up variables.
 {% for item in include.menu %}
 
     {% if item.slug == nil %}
-         {% assign slug = item.label | downcase  | replace: " ", "-" %}
+         {% assign slug = item.label | downcase  | replace: ".", "" | replace: " ", "-" %}
     {% else %}
          {% assign slug = item.slug %}
     {% endif %}
