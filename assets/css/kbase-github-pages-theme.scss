@@ -1,5 +1,9 @@
---- # this ensures Jekyll reads the file to be transformed into CSS later # only Main files contain this front matter,
-not partials. --- //
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+//
 // Import external dependencies
 //
 
@@ -22,15 +26,9 @@ not partials. --- //
 // Import custom color scheme scss
 //
 
-    {
-    % if site.color_scheme=="dark"%
-}
-
+{% if site.color_scheme == "dark" %}
 @import "./color_schemes/dark.scss";
-
-    {
-    % endif %
-}
+{% endif %}
 
 // Modules
 @import "./base";
