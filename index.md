@@ -40,7 +40,7 @@ $ gem install just-the-docs
 
 ```yaml
 # .. or add it to your your Jekyll site’s Gemfile
-gem "just-the-docs"
+gem "kbase-github-pages-theme"
 ```
 
 2. Add KBase Github Pages Theme to your Jekyll site’s `_config.yml`
