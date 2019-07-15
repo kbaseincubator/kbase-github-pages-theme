@@ -14,7 +14,7 @@ This theme is designed to be used with Github Pages for KBase  Documentation at 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: just-the-docs
+theme: kbase-github-pages-theme
 ```
 
 And then execute:
