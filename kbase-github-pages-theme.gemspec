@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "kbase-github-pages-theme"
-  spec.version       = "0.2.8"
+  spec.version       = "0.3.0"
   spec.authors       = ["Patrick Marsceill", "Erik Pearson"]
   spec.email         = ["eapearson@lbl.gov"]
 
