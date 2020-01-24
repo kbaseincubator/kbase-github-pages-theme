@@ -1,19 +1,19 @@
 {
-  "name": "kbase-github-pages-theme",
-  "version": "0.1.0",
-  "description": "A KBase theme for Github Pages (Jekyll)",
-  "repository": "kbase/kbase-github-pages-theme",
-  "license": "SEE LICENSE IN LICENSE.md",
-  "bugs": "https://github.com/kbase/kbase-github-pages-theme/issues",
-  "devDependencies": {
-    "stylelint": "10.1.0",
-    "stylelint-config-primer": "7.0.1",
-    "stylelint-selector-no-utility": "4.0.0"
-  },
-  "dependencies": {
-    "@primer/css": "12.4.1"
-  },
-  "scripts": {
-    "test": "stylelint '**/*.scss'"
-  }
+    "name": "kbase-github-pages-theme",
+    "version": "0.1.0",
+    "description": "A KBase theme for Github Pages (Jekyll)",
+    "repository": "kbase/kbase-github-pages-theme",
+    "license": "SEE LICENSE IN LICENSE.md",
+    "bugs": "https://github.com/kbase/kbase-github-pages-theme/issues",
+    "devDependencies": {
+        "stylelint": "13.0.0",
+        "stylelint-config-primer": "9.0.0",
+        "stylelint-selector-no-utility": "4.0.0"
+    },
+    "dependencies": {
+        "@primer/css": "14.2.0"
+    },
+    "scripts": {
+        "test": "stylelint '**/*.scss'"
+    }
 }

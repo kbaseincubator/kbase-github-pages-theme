@@ -16,15 +16,6 @@
 
     <link rel="stylesheet" href="{{ "/assets/css/kbase-github-pages-theme.css" | absolute_url }}">
 
-    {% if site.ga_tracking != nil %}
-        <script>
-      window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-      ga('create', '{{ site.ga_tracking }}', '{{ site.url }}');
-      ga('send', 'pageview');
-    </script>
-        <script async src="https://www.google-analytics.com/analytics.js"></script>
-    {% endif %}
-
     {% if site.search_enabled != nil %}
         <script type="text/javascript" src="{{ "/assets/js/vendor/lunr.min.js" | absolute_url }}"></script>
     {% endif %}

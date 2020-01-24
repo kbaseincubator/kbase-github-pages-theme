@@ -52,10 +52,10 @@ remote_theme: kbaseIncubator/kbase-github-pages-theme
 3. _Optional:_ Initialize search data (creates `search-data.json`)
 
 ```bash
-$ bundle exec just-the-docs rake search:init
+$ bundle exec kbase-github-pages-theme rake search:init
 ```
 
-3. Run you local Jekyll server
+3. Run your local Jekyll server
 
 ```bash
 $ jekyll serve

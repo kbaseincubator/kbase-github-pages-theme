@@ -17,7 +17,7 @@ function toggleNav() {
   const navTrigger = document.querySelector(".js-main-nav-trigger");
   const search = document.querySelector(".js-search");
 
-  addEvent(navTrigger, "click", function() {
+  addEvent(navTrigger, "click", function () {
     var text = navTrigger.innerText;
     var textToggle = navTrigger.getAttribute("data-text-toggle");
 
@@ -34,7 +34,7 @@ function toggleNav() {
 // Site search
 
 function initSearch() {
-  var index = lunr(function() {
+  var index = lunr(function () {
     this.ref("id");
     this.field("title", { boost: 20 });
     this.field("content", { boost: 10 });
@@ -49,7 +49,7 @@ function initSearch() {
   for (idx = 0; idx < sc.length; idx++) {
     s = sc.item(idx);
 
-    if (s.src && s.src.match(/just-the-docs\.js$/)) {
+    if (s.src && s.src.match(/kbase-github-pages-theme\.js$/)) {
       source = s.src;
     }
   }
@@ -61,7 +61,7 @@ function initSearch() {
   var request = new XMLHttpRequest();
   request.open("GET", jsonPath, true);
 
-  request.onload = function() {
+  request.onload = function () {
     if (request.status >= 200 && request.status < 400) {
       // Success!
       var data = JSON.parse(request.responseText);
@@ -82,7 +82,7 @@ function initSearch() {
     }
   };
 
-  request.onerror = function() {
+  request.onerror = function () {
     // There was a connection error of some sort
     console.log("There was a connection error");
   };
@@ -99,7 +99,7 @@ function initSearch() {
       searchResults.classList.remove("active");
     }
 
-    addEvent(searchInput, "keyup", function(e) {
+    addEvent(searchInput, "keyup", function (e) {
       var query = this.value;
 
       searchResults.innerHTML = "";
@@ -146,8 +146,8 @@ function initSearch() {
       }
     });
 
-    addEvent(searchInput, "blur", function() {
-      setTimeout(function() {
+    addEvent(searchInput, "blur", function () {
+      setTimeout(function () {
         hideResults();
       }, 300);
     });
@@ -164,9 +164,10 @@ function pageFocus() {
 function ready() {
   toggleNav();
   pageFocus();
-  if (typeof lunr !== "undefined") {
-    initSearch();
-  }
+  // Disable for now - re-enable when search works correctly.
+  // if (typeof lunr !== "undefined") {
+  //   initSearch();
+  // }
 }
 
 // in case the document is already rendered
@@ -175,6 +176,6 @@ if (document.readyState != "loading") ready();
 else if (document.addEventListener) document.addEventListener("DOMContentLoaded", ready);
 // IE <= 8
 else
-  document.attachEvent("onreadystatechange", function() {
+  document.attachEvent("onreadystatechange", function () {
     if (document.readyState == "complete") ready();
   });
