@@ -37,6 +37,10 @@ gem install kbase-github-pages-theme
 
 As stated above, at present this theme is designed for internal KBase usage. We don't have the capacity to entertain third party contributions through Pull Requests, nor to respond to bug reports or feature requests.
 
+## More
+
+- [Jekyll Themes](https://jekyllrb.com/docs/themes)
+
 ## License
 
 The theme is available as open source under the terms of the [KBase Open Source License](./LICENSE.md).

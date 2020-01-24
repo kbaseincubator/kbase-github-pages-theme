@@ -28,7 +28,7 @@ KBase Github Pages Theme uses [lunr.js](http://lunrjs.com) to add a client-side 
 Before you can use search, you must initialize the feature by running this `rake` command that comes with `just-the-docs`:
 
 ```bash
-$ bundle exec just-the-docs rake search:init
+$ bundle exec kbase-github-pages-theme rake search:init
 ```
 
 This command creates the `search-data.json` file that Jekyll uses to create your search index. Alternatively, you can create the file manually in the `assets/js/` directory of your Jekyll site with this content:
