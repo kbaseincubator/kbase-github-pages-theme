@@ -35,7 +35,7 @@ remote_theme: kbase/just-the-docs
 1. Install the Ruby Gem
 
 ```bash
-$ gem install just-the-docs
+$ gem install kbase-github-pages-theme
 ```
 
 ```yaml

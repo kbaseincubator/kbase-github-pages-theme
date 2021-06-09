@@ -2,4 +2,4 @@
 title: Just Docs
 ---
 
-Just DOcs here
+Just Docs here

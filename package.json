@@ -6,12 +6,12 @@
     "license": "SEE LICENSE IN LICENSE.md",
     "bugs": "https://github.com/kbase/kbase-github-pages-theme/issues",
     "devDependencies": {
-        "stylelint": "13.0.0",
-        "stylelint-config-primer": "9.0.0",
+        "stylelint": "13.13.1",
+        "stylelint-config-primer": "11.0.1",
         "stylelint-selector-no-utility": "4.0.0"
     },
     "dependencies": {
-        "@primer/css": "14.2.0"
+        "@primer/css": "17.3.0"
     },
     "scripts": {
         "test": "stylelint '**/*.scss'"

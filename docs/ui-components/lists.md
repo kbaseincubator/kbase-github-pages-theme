@@ -6,15 +6,13 @@ nav_order: 5
 ---
 
 # Lists
-
 {: .no_toc }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
+* TOC
+{:toc}
 
 ---
 
@@ -22,29 +20,34 @@ Most lists can be rendered with pure Markdown.
 
 ## Unordered list
 
+You may use a `-` or `*` to begin an unordered list item.
+
 <div class="code-example" markdown="1">
 - Item 1
 - Item 2
 - Item 3
-
-_or_
-
-- Item 1
-- Item 2
-- Item 3
-  </div>
-
+</div>
 ```markdown
 - Item 1
 - Item 2
 - Item 3
-
-_or_
-
-- Item 1
-- Item 2
-- Item 3
 ```
+
+<div class="code-example" markdown="1">
+* Item 1
+* Item 2
+* Item 3
+</div>
+```markdown
+* Item 1
+* Item 2
+* Item 3
+```
+
+
+which is rendered like:
+
+
 
 ## Ordered list
 
@@ -70,7 +73,8 @@ _or_
 - [ ] hello, this is a todo item
 - [ ] hello, this is another todo item
 - [x] goodbye, this item is done
-```
+````
+
 
 ## Definition list
 
@@ -100,3 +104,7 @@ Definition lists require HTML syntax and aren't supported with the GitHub Flavor
   <dd>Green</dd>
 </dl>
 ```
+
+
+
+
