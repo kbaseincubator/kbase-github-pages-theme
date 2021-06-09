@@ -1,20 +1,19 @@
 ---
 nav_order: 2
+toc: true
 ---
 
 # Configuration
-
 {: .no_toc }
 
 KBase Github Pages Theme has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
+* TOC
+{:toc}
 
 ---
 
@@ -22,15 +21,17 @@ View this site's [\_config.yml](https://github.com/kbaseIncubator/kbase-github-p
 
 ## Search enabled
 
+Enable or disable the site search
+
 ```yaml
-# Enable or disable the site search
 search_enabled: true
 ```
 
 ## Aux links
 
+Aux links for the upper right navigation
+
 ```yaml
-# Aux links for the upper right navigation
 aux_links:
   "KBase Github Pages Theme on GitHub":
     - "//github.com/kbaseIncubator/kbase-github-pages-theme"
@@ -38,8 +39,10 @@ aux_links:
 
 ## Color scheme
 
+Color scheme currently only supports "dark" or nil (default)
+
+
 ```yaml
-# Color scheme currently only supports "dark" or nil (default)
 color_scheme: "dark"
 ```
 
@@ -64,8 +67,8 @@ See [Customization]({{ site.baseurl }}{% link docs/customization.md %}) for more
 
 ## Google Analytics
 
+Google Analytics Tracking (optional)
+
 ```yaml
-# Google Analytics Tracking (optional)
-# e.g, UA-1234567-89
 ga_tracking: UA-5555555-55
 ```

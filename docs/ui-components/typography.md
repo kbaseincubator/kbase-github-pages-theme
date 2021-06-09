@@ -6,15 +6,13 @@ nav_order: 1
 ---
 
 # Typography
-
 {: .no_toc }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
+* TOC
+{:toc}
 
 ---
 
@@ -22,23 +20,28 @@ nav_order: 1
 
 By default, KBase Github Pages Theme uses a native system font stack for sans-serif fonts:
 
+<div class="code-example" markdown="1">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+{: .fs-5 .ls-10 }
+</div>
 ```scss
 -apple-system, BlinkMacSystemFont, "helvetica neue", helvetica, roboto, noto, "segoe ui", arial, sans-serif
 ```
 
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz
-{: .fs-5 .ls-10 .code-example }
 
 For monospace type, like code snippets or the `<pre>` element, KBase Github Pages Theme uses a native system font stack for monospace fonts:
 
+<div class="code-example" markdown="1">
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+{: .fs-5 .ls-10 .text-mono}
+</div>
 ```scss
 "SFMono-Regular", Menlo, Consolas, Monospace
 ```
 
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
-abcdefghijklmnopqrstuvwxyz
-{: .fs-5 .ls-10 .text-mono .code-example }
+
 
 ---
 
@@ -99,7 +102,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 <div class="code-example" markdown="1">
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
-[Link to another page](another-page).
+Or [link to another page](another-page).
 
 </div>
 ```markdown

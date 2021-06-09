@@ -6,15 +6,13 @@ nav_order: 6
 ---
 
 # Code
-
 {: .no_toc }
 
 ## Table of contents
-
 {: .no_toc .text-delta }
 
-1. TOC
-   {:toc}
+* TOC
+{:toc}
 
 ---
 
@@ -44,7 +42,9 @@ var fun = function lang(l) {
 }
 ```
 </div>
-{% highlight markdown %}
+
+<div markdown="0">
+<code >
 ```js
 // Javascript code with syntax highlighting.
 var fun = function lang(l) {
@@ -52,7 +52,8 @@ var fun = function lang(l) {
   return true;
 }
 ```
-{% endhighlight %}
+</code>
+</div>
 
 ---
 
